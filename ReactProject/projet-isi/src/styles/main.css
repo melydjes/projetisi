@@ -1,0 +1,112 @@
+.main {
+    display: block;
+    padding: 3rem 2rem 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-family: Verdana, sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.05em;
+    text-align: center;
+}
+
+.main-description {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 100%; /* Ajustement pour la responsivité */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.main-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.icon-img-two {
+    width: 90px;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.icon-img {
+    width: 100px;
+    padding: 0.5rem;
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.video-card {
+    width: calc(25% - 20px); /* 4 vidéos par ligne */
+    margin: 10px; /* Espacement ajusté pour la responsivité */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video-card h3 {
+    margin: 10px 0;
+   
+}
+
+.video-card p {
+    color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+   /* Ajoutez ce code dans votre fichier CSS */
+
+@media only screen and (max-width: 768px) {
+    .main-title {
+        position: relative; /* Assurez-vous que le titre a une position relative */
+        z-index: 999; /* Assure que le titre reste au-dessus du navbar */
+        margin-top: 250px; /* Déplacez le titre au-dessus du navbar */
+    }
+
+    .main-description {
+        position: relative; /* Assurez-vous que la description a une position relative */
+        z-index: 999; /* Assure que la description reste au-dessus du titre */
+        margin-top: 20px; /* Déplacez la description au-dessus du titre */
+        padding: 0 10px; /* Ajoute un peu d'espace sur les côtés */
+    }
+
+    .main-icons img {
+        width: 50px; /* Réduisez la taille des icônes */
+    }
+
+    .video-gallery {
+        margin-top: 120px; /* Déplace les vidéos au-dessus des icônes */
+    }
+
+    .video-card {
+        width: calc(100% - 20px); /* Affiche une vidéo par ligne sur les petits écrans */
+        margin: 10px; /* Ajoute un peu d'espace entre les vidéos */
+    }
+}
+
+}

@@ -1,0 +1,86 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 15px;
+    position: relative;
+    background-color: #21222A;
+}
+
+.logo {
+    width: 60px;
+    padding: 10px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    border-radius: 1rem;
+    border: none;
+    width: 100%; /* Modifier la largeur pour occuper toute la largeur disponible */
+    max-width: 450px; /* Ajouter une largeur maximale */
+    padding: 8px;
+    background-color: white;
+    color: #454343;
+    font-size: 18px;
+    outline: 0;
+}
+
+.search-img {
+    width: 35px;
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    cursor: pointer;
+}
+
+.btn-container {
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-video-img {
+    width: 30px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.logout-btn {
+    padding: 8px 15px; /* Réduire la largeur du bouton pour s'adapter aux petits écrans */
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+
+.logout-btn:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: #21222A;
+}
+
+/* Media query pour les petits écrans */
+@media only screen and (max-width: 768px) {
+    .search-box input {
+        max-width: none; /* Supprimer la largeur maximale pour s'adapter aux petits écrans */
+    }
+
+    .btn-container {
+        padding-right: 15px; /* Réduire l'espacement entre les boutons pour les petits écrans */
+    }
+}
